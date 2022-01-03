@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dualScreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Learn.DualScreen.Views.MainDualView">
+  <dualScreen:TwoPaneView>
+    <dualScreen:TwoPaneView.Pane1>
+      <Label Text="Pane 1 Contents" />
+    </dualScreen:TwoPaneView.Pane1>
+
+    <dualScreen:TwoPaneView.Pane2>
+      <Label Text="Pane 2 Content" />
+    </dualScreen:TwoPaneView.Pane2>
+  </dualScreen:TwoPaneView>
+</ContentPage>

@@ -1,9 +1,9 @@
 ﻿
 namespace Learn.DualScreen.Views
 {
-  public partial class MainPage
+  public partial class StatisticsView
   {
-    public MainPage()
+    public StatisticsView()
     {
       InitializeComponent();
     }

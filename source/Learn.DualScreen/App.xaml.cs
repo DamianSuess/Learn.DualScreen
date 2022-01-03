@@ -11,7 +11,7 @@ namespace Learn.DualScreen
   public partial class App
   {
     public App(IPlatformInitializer initializer)
-        : base(initializer)
+      : base(initializer)
     {
     }
 
@@ -19,7 +19,7 @@ namespace Learn.DualScreen
     {
       InitializeComponent();
 
-      await NavigationService.NavigateAsync("NavigationPage/MainPage");
+      await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(MainDualView)}");
     }
 
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -27,7 +27,8 @@ namespace Learn.DualScreen
       containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
 
       containerRegistry.RegisterForNavigation<NavigationPage>();
-      containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+      containerRegistry.RegisterForNavigation<StatisticsView, StatisticsViewModel>();
+      containerRegistry.RegisterForNavigation<MainDualView, MainDualViewModel>();
     }
   }
 }
