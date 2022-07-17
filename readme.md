@@ -9,14 +9,14 @@ take a sneak-peak at PR #5020 to reconstruct what's going on here.
 
 [https://github.com/dotnet/maui/pull/5020]
 
-Namespaces:
-
-* Control - Microsoft.Maui.Controls.Foldable.TwoPaneView
-* Class - Microsoft.Maui.Foldable.DualScreenInfo
-
 ## How to use
 
-asdf
+Initialize in your Host Builder via `.UseFoldable()` (`Startup.cs`)
+
+Namespaces:
+
+* Control - `Microsoft.Maui.Controls.Foldable.TwoPaneView`
+* Class - `Microsoft.Maui.Foldable.DualScreenInfo`
 
 ## DualScreenInfo
 
