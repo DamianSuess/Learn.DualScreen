@@ -1,6 +1,22 @@
-# Xamarin Dual Screen Sample
+# .NET MAUI Dual Screen Sample
 
 This repo provides a sample as to how to work with Dual-Screen mobile applications.
+
+DualScreen for Surface Duo and Samsung foldables!
+
+Currently this feature is undocumented in .NET MAUI, however, we can
+take a sneak-peak at PR #5020 to reconstruct what's going on here.
+
+[https://github.com/dotnet/maui/pull/5020]
+
+Namespaces:
+
+* Control - Microsoft.Maui.Controls.Foldable.TwoPaneView
+* Class - Microsoft.Maui.Foldable.DualScreenInfo
+
+## How to use
+
+asdf
 
 ## DualScreenInfo
 
