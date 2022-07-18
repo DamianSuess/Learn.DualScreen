@@ -1,4 +1,6 @@
-﻿namespace Learn.MauiDualScreen;
+﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.Foldable;
+namespace Learn.MauiDualScreen;
 
 public static class MauiProgram
 {
@@ -7,13 +9,15 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseFoldable() // Enabled foldable
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+    // Allow foldable app
+    builder.UseFoldable();
+
+    return builder.Build();
 	}
 }
